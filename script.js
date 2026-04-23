@@ -8,7 +8,7 @@ let gameOver = false;
 
 cells.forEach(function(cell,index){
     cell.addEventListener("click",function(){
-        if(board[index] !== "" || gameover) return;
+        if(board[index] !== "" || gameOver) return;
 
         board[index] = currentPlayer;
         cell.textContent = currentPlayer;
